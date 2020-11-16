@@ -1,0 +1,8 @@
+body {
+    width: 35em;
+    margin: 0 auto;
+    padding-top: 3em;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    background: url('hero.jpg') no-repeat;
+    color: #fff
+}
