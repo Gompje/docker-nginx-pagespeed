@@ -1,2 +1,5 @@
 .env
 geoip/
+!/.env
+
+.idea/workspace.xml

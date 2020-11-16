@@ -15,7 +15,7 @@ RUN apt-get update -y && \
 
 RUN apt-get install -y \
 	apt-utils \
-	git nano \
+	git vim \
 	g++ \
 	gcc \
 	curl \
