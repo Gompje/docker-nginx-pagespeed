@@ -157,10 +157,10 @@ COPY ./scripts                    /usr/local/bin/
 
 RUN chmod +x /usr/local/bin/*
 
-EXPOSE 80 8080
+EXPOSE 5000 5050
 WORKDIR /etc/nginx
 
-HEALTHCHECK --interval=5s --timeout=5s CMD curl -I http://127.0.0.1:8080/health || exit 1
+HEALTHCHECK --interval=5s --timeout=5s CMD curl -I http://127.0.0.1:5050/health || exit 1
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["nginx", "-g", "daemon off;"]
